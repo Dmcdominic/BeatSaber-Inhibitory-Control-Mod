@@ -12,7 +12,7 @@ using IllusionPlugin;
 
 namespace BS_Inhibitory_Control_Mod {
 	public class Plugin : IPlugin {
-		public string Name => "Plugin Name";
+		public string Name => "Inhibitory Control Mod";
 		public string Version => "0.0.1";
 
 		bool doesPluginExist;
