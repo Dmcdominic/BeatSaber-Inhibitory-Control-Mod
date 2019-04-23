@@ -211,7 +211,6 @@ C:\Users\Martin-Lof\Documents\beatsaber\BeatSaber-Inhibitory-Control-Mod\BS Inhi
 C:\Users\Martin-Lof\Documents\beatsaber\BeatSaber-Inhibitory-Control-Mod\BS Inhibitory Control Mod\BS Inhibitory Control Mod\bin\Debug\UnityEngine.ARModule.xml
 C:\Users\Martin-Lof\Documents\beatsaber\BeatSaber-Inhibitory-Control-Mod\BS Inhibitory Control Mod\BS Inhibitory Control Mod\bin\Debug\UnityEngine.CrashReportingModule.xml
 C:\Users\Martin-Lof\Documents\beatsaber\BeatSaber-Inhibitory-Control-Mod\BS Inhibitory Control Mod\BS Inhibitory Control Mod\bin\Debug\UnityEngine.PerformanceReportingModule.xml
-C:\Users\Martin-Lof\Documents\beatsaber\BeatSaber-Inhibitory-Control-Mod\BS Inhibitory Control Mod\BS Inhibitory Control Mod\obj\Debug\BS Inhibitory Control Mod.csprojAssemblyReference.cache
 C:\Users\Martin-Lof\Documents\beatsaber\BeatSaber-Inhibitory-Control-Mod\BS Inhibitory Control Mod\BS Inhibitory Control Mod\obj\Debug\BS Inhibitory Control Mod.csproj.CoreCompileInputs.cache
 C:\Users\Martin-Lof\Documents\beatsaber\BeatSaber-Inhibitory-Control-Mod\BS Inhibitory Control Mod\BS Inhibitory Control Mod\obj\Debug\BS Inhibitory Control Mod.csproj.CopyComplete
 C:\Users\Martin-Lof\Documents\beatsaber\BeatSaber-Inhibitory-Control-Mod\BS Inhibitory Control Mod\BS Inhibitory Control Mod\obj\Debug\BeatSaberInhibitoryControlMod.dll

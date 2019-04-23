@@ -43,7 +43,7 @@ namespace bs_flipped
             if (newScene.name == "Menu")
             {
                 //Code to execute when entering The Menu
-                Debug.Log("I'm here!");
+                Debug.Log("We reached the menu!");
 
             }
 
@@ -84,8 +84,9 @@ namespace bs_flipped
             if (Input.GetKeyDown(KeyCode.Q))
             {
                 flip_color = !flip_color;
-                Debug.Log("Q\n");
-                Debug.Log(sigma_color.Count);
+                Debug.Log("I pressed q: Q\n");
+                Debug.Log($"Is sigma for colors null?: {sigma_color == null}");
+                Debug.Log($"How many blocks have we switched {sigma_color.Count}");
             }
             
 
