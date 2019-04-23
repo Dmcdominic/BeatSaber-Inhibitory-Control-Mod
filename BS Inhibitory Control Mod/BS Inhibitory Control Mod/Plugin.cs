@@ -43,7 +43,7 @@ namespace bs_flipped
             if (newScene.name == "Menu")
             {
                 //Code to execute when entering The Menu
-
+                Debug.Log("I'm here!");
 
             }
 
@@ -82,10 +82,18 @@ namespace bs_flipped
         public void OnUpdate()
         {
             if (Input.GetKeyDown(KeyCode.Q))
+            {
                 flip_color = !flip_color;
+                Debug.Log("Q\n");
+                Debug.Log(sigma_color.Count);
+            }
+            
 
             if (Input.GetKeyDown(KeyCode.P))
+            {
                 flip_direction = !flip_direction;
+            }
+            
             var notes = UnityEngine.Object.FindObjectsOfType(typeof(GameNoteController));
 
             foreach(GameNoteController gnc in notes)
