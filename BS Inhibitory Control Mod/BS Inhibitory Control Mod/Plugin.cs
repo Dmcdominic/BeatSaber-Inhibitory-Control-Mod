@@ -81,6 +81,10 @@ namespace bs_flipped
 
         public void OnUpdate()
         {
+            if (sigma_color == null)
+                sigma_color = new HashSet<int>();
+            if (sigma_direction == null)
+                sigma_direction = new HashSet<int>();
             if (Input.GetKeyDown(KeyCode.Q))
             {
                 flip_color = !flip_color;
