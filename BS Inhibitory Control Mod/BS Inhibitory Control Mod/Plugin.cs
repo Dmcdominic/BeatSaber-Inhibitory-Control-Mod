@@ -88,7 +88,7 @@ namespace bs_flipped
             if (Input.GetKeyDown(KeyCode.Q))
             {
                 flip_color = !flip_color;
-                Debug.Log("I pressed q: Q\n");
+                Debug.Log("I pressed Q");
                 Debug.Log($"Is sigma for colors null?: {sigma_color == null}");
                 Debug.Log($"How many blocks have we switched {sigma_color.Count}");
             }
@@ -97,6 +97,9 @@ namespace bs_flipped
             if (Input.GetKeyDown(KeyCode.P))
             {
                 flip_direction = !flip_direction;
+                Debug.Log($"We pressed P");
+                Debug.Log($"Is sigma for directions null?: {sigma_color == null}");
+                Debug.Log($"How many blocks have we switched {sigma_direction.Count}");
             }
             
             var notes = UnityEngine.Object.FindObjectsOfType(typeof(GameNoteController));
@@ -106,7 +109,10 @@ namespace bs_flipped
 
                 if(flip_color && !sigma_color.Contains(gnc.GetInstanceID()))
                 {
+                    var old_col = gnc.noteData.noteType;
                     gnc.noteData.SwitchNoteType();
+                    Debug.Log($"Switched a notes color!: {gnc.GetInstanceID()}, old type: {old_col}, new type: {gnc.noteData.noteType}");
+                    sigma_color.Add(gnc.GetInstanceID());
                 }
 
                 if(flip_direction && !sigma_direction.Contains(gnc.GetInstanceID()))
@@ -145,8 +151,10 @@ namespace bs_flipped
                             ncd = NoteCutDirection.Any;
                             break;
                     }
+                    var old_dir = gnc.noteData.cutDirection;
                     gnc.noteData.GetType().GetField("cutDirection", BindingFlags.Instance | BindingFlags.NonPublic).SetValue(gnc.noteData, ncd);
                     sigma_direction.Add(gnc.GetInstanceID());
+                    Debug.Log($"Switched a notes direction!: {gnc.GetInstanceID()}, old type: {old_dir}, new type: {gnc.noteData.cutDirection}");
                 }
             }
 
